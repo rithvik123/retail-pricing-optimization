@@ -17,6 +17,8 @@ DEFAULT_PROMOTION_EFFECT = 0.0
 @lru_cache(maxsize=1)
 def load_features(features_path: str | None = None) -> pd.DataFrame:
     path = Path(features_path) if features_path else default_features_path()
+    if not path.exists():
+        return pd.DataFrame()
     return pd.read_parquet(path)
 
 
@@ -38,6 +40,8 @@ def load_promotion_impact_table(path: str | None = None) -> pd.DataFrame:
 
 def latest_product_store_features(product_id: int | str, store_id: int | str, features: pd.DataFrame | None = None) -> pd.Series | None:
     frame = features if features is not None else load_features()
+    if frame.empty or not {"product_id", "store_id"}.issubset(frame.columns):
+        return None
     product_value = int(product_id) if str(product_id).isdigit() else product_id
     store_value = int(store_id) if str(store_id).isdigit() else store_id
     rows = frame[(frame["product_id"] == product_value) & (frame["store_id"] == store_value)]
@@ -125,4 +129,3 @@ def build_recommendation_context(product_id: int | str, store_id: int | str) -> 
         "commodity_desc": commodity_desc,
         "source": "artifact_lookup",
     }
-
