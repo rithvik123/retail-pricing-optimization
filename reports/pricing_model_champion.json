@@ -1,0 +1,99 @@
+{
+  "champion": {
+    "name": "catboost_v2_weighted_mae",
+    "model_path": "D:\\PycharmProjects\\Retail_Price_Optimisation\\models\\catboost_v2_weighted_mae_model.pkl",
+    "metrics_path": "D:\\PycharmProjects\\Retail_Price_Optimisation\\reports\\catboost_v2_weighted_mae_metrics.json",
+    "selection_metric": "wape",
+    "selection_split": "test",
+    "score": 0.2591945835767334,
+    "test_metrics": {
+      "mae": 0.368178750222577,
+      "rmse": 0.9764588431353457,
+      "smape": 0.18060600384733613,
+      "wape": 0.2591945835767334
+    },
+    "validation_metrics": {
+      "mae": 0.36400123542303764,
+      "rmse": 1.0118660406060842,
+      "smape": 0.17709604306136265,
+      "wape": 0.25669510701234244
+    },
+    "scenario_safe": true,
+    "leakage_features_present": []
+  },
+  "candidates": [
+    {
+      "name": "catboost_v2_weighted_mae",
+      "model_path": "D:\\PycharmProjects\\Retail_Price_Optimisation\\models\\catboost_v2_weighted_mae_model.pkl",
+      "metrics_path": "D:\\PycharmProjects\\Retail_Price_Optimisation\\reports\\catboost_v2_weighted_mae_metrics.json",
+      "selection_metric": "wape",
+      "selection_split": "test",
+      "score": 0.2591945835767334,
+      "test_metrics": {
+        "mae": 0.368178750222577,
+        "rmse": 0.9764588431353457,
+        "smape": 0.18060600384733613,
+        "wape": 0.2591945835767334
+      },
+      "validation_metrics": {
+        "mae": 0.36400123542303764,
+        "rmse": 1.0118660406060842,
+        "smape": 0.17709604306136265,
+        "wape": 0.25669510701234244
+      },
+      "scenario_safe": true,
+      "leakage_features_present": []
+    },
+    {
+      "name": "catboost_v2_rmse",
+      "model_path": "D:\\PycharmProjects\\Retail_Price_Optimisation\\models\\catboost_v2_rmse_model.pkl",
+      "metrics_path": "D:\\PycharmProjects\\Retail_Price_Optimisation\\reports\\catboost_v2_rmse_metrics.json",
+      "selection_metric": "wape",
+      "selection_split": "test",
+      "score": 0.3210028328743861,
+      "test_metrics": {
+        "mae": 0.4559756619706123,
+        "rmse": 0.915334423056467,
+        "smape": 0.25981216671998353,
+        "wape": 0.3210028328743861
+      },
+      "validation_metrics": {
+        "mae": 0.45253460877699886,
+        "rmse": 0.9428129618487823,
+        "smape": 0.25731687760025634,
+        "wape": 0.31912919111880644
+      },
+      "scenario_safe": true,
+      "leakage_features_present": []
+    },
+    {
+      "name": "catboost_v2_tweedie",
+      "model_path": "D:\\PycharmProjects\\Retail_Price_Optimisation\\models\\catboost_v2_tweedie_model.pkl",
+      "metrics_path": "D:\\PycharmProjects\\Retail_Price_Optimisation\\reports\\catboost_v2_tweedie_metrics.json",
+      "selection_metric": "wape",
+      "selection_split": "test",
+      "score": 0.33336125074971157,
+      "test_metrics": {
+        "mae": 0.47353045337588356,
+        "rmse": 0.9271971581607077,
+        "smape": 0.2724443661931569,
+        "wape": 0.33336125074971157
+      },
+      "validation_metrics": {
+        "mae": 0.4719943697796151,
+        "rmse": 0.960258139389985,
+        "smape": 0.2705524286057417,
+        "wape": 0.3328522913362983
+      },
+      "scenario_safe": true,
+      "leakage_features_present": []
+    }
+  ],
+  "champion_model_path": null,
+  "best_candidate_model_path": "D:\\PycharmProjects\\Retail_Price_Optimisation\\models\\catboost_v2_weighted_mae_model.pkl",
+  "incumbent_demand_wape": 0.1408469937246546,
+  "near_accuracy_tolerance": 0.1,
+  "near_current_accuracy": false,
+  "serving_safe": true,
+  "accepted_for_pricing": false
+}

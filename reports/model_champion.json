@@ -1,0 +1,108 @@
+{
+  "champion": {
+    "name": "catboost_calibrated_regression",
+    "model_path": "D:\\PycharmProjects\\Retail_Price_Optimisation\\models\\catboost_calibrated_demand_model.pkl",
+    "metrics_path": "D:\\PycharmProjects\\Retail_Price_Optimisation\\reports\\catboost_calibrated_metrics.json",
+    "selection_metric": "wape",
+    "selection_split": "test",
+    "score": 0.13879469703362543,
+    "test_metrics": {
+      "mae": 0.19715403534361714,
+      "rmse": 0.5593105404150025,
+      "smape": 0.11200223912792971,
+      "wape": 0.13879469703362543
+    },
+    "validation_metrics": {
+      "mae": 0.193064923296288,
+      "rmse": 0.5547424304378905,
+      "smape": 0.10922141102266449,
+      "wape": 0.1361501454473738
+    },
+    "calibrated_from": "D:\\PycharmProjects\\Retail_Price_Optimisation\\models\\catboost_demand_model.pkl"
+  },
+  "candidates": [
+    {
+      "name": "catboost_calibrated_regression",
+      "model_path": "D:\\PycharmProjects\\Retail_Price_Optimisation\\models\\catboost_calibrated_demand_model.pkl",
+      "metrics_path": "D:\\PycharmProjects\\Retail_Price_Optimisation\\reports\\catboost_calibrated_metrics.json",
+      "selection_metric": "wape",
+      "selection_split": "test",
+      "score": 0.13879469703362543,
+      "test_metrics": {
+        "mae": 0.19715403534361714,
+        "rmse": 0.5593105404150025,
+        "smape": 0.11200223912792971,
+        "wape": 0.13879469703362543
+      },
+      "validation_metrics": {
+        "mae": 0.193064923296288,
+        "rmse": 0.5547424304378905,
+        "smape": 0.10922141102266449,
+        "wape": 0.1361501454473738
+      },
+      "calibrated_from": "D:\\PycharmProjects\\Retail_Price_Optimisation\\models\\catboost_demand_model.pkl"
+    },
+    {
+      "name": "catboost_regression",
+      "model_path": "D:\\PycharmProjects\\Retail_Price_Optimisation\\models\\catboost_demand_model.pkl",
+      "metrics_path": "D:\\PycharmProjects\\Retail_Price_Optimisation\\reports\\catboost_metrics.json",
+      "selection_metric": "wape",
+      "selection_split": "test",
+      "score": 0.1408469937246546,
+      "test_metrics": {
+        "mae": 0.20006926613417628,
+        "rmse": 0.5604830119258958,
+        "smape": 0.11487705937139352,
+        "wape": 0.1408469937246546
+      },
+      "validation_metrics": {
+        "mae": 0.19580960985509793,
+        "rmse": 0.5558578256267147,
+        "smape": 0.11203361268538763,
+        "wape": 0.13808570923498084
+      }
+    },
+    {
+      "name": "baseline_lightgbm_regression",
+      "model_path": "D:\\PycharmProjects\\Retail_Price_Optimisation\\models\\baseline_demand_model.pkl",
+      "metrics_path": "D:\\PycharmProjects\\Retail_Price_Optimisation\\reports\\baseline_metrics.json",
+      "selection_metric": "wape",
+      "selection_split": "test",
+      "score": 0.14657077798144022,
+      "test_metrics": {
+        "mae": 0.20819974365082206,
+        "rmse": 0.5600692326682903,
+        "smape": 0.12013873454710954,
+        "wape": 0.14657077798144022
+      },
+      "validation_metrics": {
+        "mae": 0.20586719805270703,
+        "rmse": 0.5640803352715967,
+        "smape": 0.11848661243738554,
+        "wape": 0.14517836010379145
+      }
+    },
+    {
+      "name": "production_lightgbm_poisson",
+      "model_path": "D:\\PycharmProjects\\Retail_Price_Optimisation\\models\\production_demand_model.pkl",
+      "metrics_path": "D:\\PycharmProjects\\Retail_Price_Optimisation\\reports\\production_metrics.json",
+      "selection_metric": "wape",
+      "selection_split": "test",
+      "score": 0.1507121859615545,
+      "test_metrics": {
+        "mae": 0.214082499352115,
+        "rmse": 0.5735729769674965,
+        "smape": 0.12089967991077358,
+        "wape": 0.1507121859615545
+      },
+      "validation_metrics": {
+        "mae": 0.21111285323827558,
+        "rmse": 0.5753178878961902,
+        "smape": 0.11890392673364994,
+        "wape": 0.1488776168319848
+      }
+    }
+  ],
+  "champion_model_path": "D:\\PycharmProjects\\Retail_Price_Optimisation\\models\\champion_demand_model.pkl",
+  "promotion_reason": "Calibration improved or matched incumbent demand WAPE."
+}

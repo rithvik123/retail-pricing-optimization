@@ -1,0 +1,52 @@
+{
+  "model_type": "CatBoostRegressor",
+  "train_rows": 1575205,
+  "validation_rows": 374586,
+  "test_rows": 389041,
+  "features": [
+    "avg_unit_price",
+    "median_unit_price",
+    "discount_percentage",
+    "is_display",
+    "is_mailer",
+    "week_no",
+    "lag_quantity_1",
+    "lag_quantity_2",
+    "lag_quantity_4",
+    "rolling_quantity_mean_4",
+    "rolling_quantity_mean_8",
+    "rolling_quantity_std_4",
+    "price_change",
+    "price_lag_1",
+    "total_retail_discount",
+    "total_coupon_discount",
+    "num_baskets",
+    "num_households",
+    "department",
+    "commodity_desc",
+    "brand",
+    "store_id",
+    "product_id"
+  ],
+  "categorical_features": [
+    "department",
+    "commodity_desc",
+    "brand",
+    "store_id",
+    "product_id"
+  ],
+  "iterations_requested": 800,
+  "best_iteration": 799,
+  "validation": {
+    "mae": 0.19580960985509793,
+    "rmse": 0.5558578256267147,
+    "smape": 0.11203361268538763,
+    "wape": 0.13808570923498084
+  },
+  "test": {
+    "mae": 0.20006926613417628,
+    "rmse": 0.5604830119258958,
+    "smape": 0.11487705937139352,
+    "wape": 0.1408469937246546
+  }
+}

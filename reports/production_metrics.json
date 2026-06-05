@@ -1,0 +1,52 @@
+{
+  "model_type": "LightGBM Poisson count-demand regressor",
+  "train_rows": 1575205,
+  "validation_rows": 374586,
+  "test_rows": 389041,
+  "base_features": [
+    "avg_unit_price",
+    "median_unit_price",
+    "discount_percentage",
+    "is_display",
+    "is_mailer",
+    "week_no",
+    "lag_quantity_1",
+    "lag_quantity_2",
+    "lag_quantity_4",
+    "rolling_quantity_mean_4",
+    "rolling_quantity_mean_8",
+    "rolling_quantity_std_4",
+    "price_change",
+    "price_lag_1",
+    "total_retail_discount",
+    "total_coupon_discount",
+    "num_baskets",
+    "num_households",
+    "department",
+    "commodity_desc",
+    "brand",
+    "store_id",
+    "product_id"
+  ],
+  "augmented_features": [
+    "log_avg_unit_price",
+    "price_ratio_lag_1",
+    "discount_x_display",
+    "discount_x_mailer",
+    "any_promotion",
+    "lag_velocity_4",
+    "lag_velocity_8"
+  ],
+  "validation": {
+    "mae": 0.21111285323827558,
+    "rmse": 0.5753178878961902,
+    "smape": 0.11890392673364994,
+    "wape": 0.1488776168319848
+  },
+  "test": {
+    "mae": 0.214082499352115,
+    "rmse": 0.5735729769674965,
+    "smape": 0.12089967991077358,
+    "wape": 0.1507121859615545
+  }
+}

@@ -1,0 +1,463 @@
+{
+  "model_type": "Prediction-bin calibrated CatBoost demand model",
+  "base_model_path": "D:\\PycharmProjects\\Retail_Price_Optimisation\\models\\catboost_demand_model.pkl",
+  "train_rows": 1575205,
+  "validation_rows": 374586,
+  "test_rows": 389041,
+  "bin_edges": [
+    "-inf",
+    0.75,
+    1.25,
+    1.75,
+    2.5,
+    4.0,
+    8.0,
+    "inf"
+  ],
+  "scale_factors": [
+    1.4,
+    0.9906320715962031,
+    1.019889337182131,
+    1.0078302589395958,
+    1.011996275471444,
+    1.0064964106469672,
+    1.027676368518647
+  ],
+  "base_validation": {
+    "mae": 0.19580960985509793,
+    "rmse": 0.5558578256267147,
+    "smape": 0.11203361268538763,
+    "wape": 0.13808570923498084
+  },
+  "base_test": {
+    "mae": 0.20006926613417628,
+    "rmse": 0.5604830119258958,
+    "smape": 0.11487705937139352,
+    "wape": 0.1408469937246546
+  },
+  "validation": {
+    "mae": 0.193064923296288,
+    "rmse": 0.5547424304378905,
+    "smape": 0.10922141102266449,
+    "wape": 0.1361501454473738,
+    "quantity_bins": [
+      {
+        "quantity_bin": "1",
+        "rows": 283699,
+        "actual_units": 283699.0,
+        "predicted_units": 307898.950617224,
+        "mae": 0.09819866685409569,
+        "wape": 0.09819866685409569
+      },
+      {
+        "quantity_bin": "2",
+        "rows": 61969,
+        "actual_units": 123938.0,
+        "predicted_units": 116697.45865216698,
+        "mae": 0.3091643232519721,
+        "wape": 0.15458216162598604
+      },
+      {
+        "quantity_bin": "3-5",
+        "rows": 24438,
+        "actual_units": 86214.0,
+        "predicted_units": 76336.07203944487,
+        "mae": 0.6588664327059821,
+        "wape": 0.1867605943636624
+      },
+      {
+        "quantity_bin": "11+",
+        "rows": 630,
+        "actual_units": 9948.0,
+        "predicted_units": 7475.655917690984,
+        "mae": 4.597775952271718,
+        "wape": 0.29117398973976505
+      },
+      {
+        "quantity_bin": "6-10",
+        "rows": 3850,
+        "actual_units": 27375.0,
+        "predicted_units": 22724.886295772918,
+        "mae": 1.6373956077978769,
+        "wape": 0.2302821220099297
+      }
+    ],
+    "departments_by_wape": [
+      {
+        "department": "GARDEN CENTER",
+        "rows": 58,
+        "actual_units": 119.0,
+        "predicted_units": 102.57656439672859,
+        "mae": 1.0114791699134094,
+        "wape": 0.4929898475208214
+      },
+      {
+        "department": "POSTAL CENTER",
+        "rows": 3,
+        "actual_units": 3.0,
+        "predicted_units": 4.259045258172449,
+        "mae": 0.4196817527241498,
+        "wape": 0.4196817527241498
+      },
+      {
+        "department": "MEAT-WHSE",
+        "rows": 3,
+        "actual_units": 7.0,
+        "predicted_units": 9.240045615186302,
+        "mae": 0.7466818717287674,
+        "wape": 0.320006516455186
+      },
+      {
+        "department": "ELECT &PLUMBING",
+        "rows": 1,
+        "actual_units": 1.0,
+        "predicted_units": 1.284965978665259,
+        "mae": 0.28496597866525897,
+        "wape": 0.28496597866525897
+      },
+      {
+        "department": "RESTAURANT",
+        "rows": 83,
+        "actual_units": 103.0,
+        "predicted_units": 106.70717613932743,
+        "mae": 0.28026361843287045,
+        "wape": 0.22584349834881792
+      },
+      {
+        "department": "DELI/SNACK BAR",
+        "rows": 6,
+        "actual_units": 6.0,
+        "predicted_units": 7.271715541581952,
+        "mae": 0.21195259026365856,
+        "wape": 0.21195259026365856
+      },
+      {
+        "department": "FLORAL",
+        "rows": 714,
+        "actual_units": 937.0,
+        "predicted_units": 878.2397700755087,
+        "mae": 0.2592366074729453,
+        "wape": 0.19753995489400528
+      },
+      {
+        "department": "CHEF SHOPPE",
+        "rows": 199,
+        "actual_units": 226.0,
+        "predicted_units": 239.80740412494217,
+        "mae": 0.2209621071060143,
+        "wape": 0.19456397926591526
+      },
+      {
+        "department": "PASTRY",
+        "rows": 5791,
+        "actual_units": 8050.0,
+        "predicted_units": 8057.136090113916,
+        "mae": 0.2607589015894387,
+        "wape": 0.1875844470937192
+      },
+      {
+        "department": "SALAD BAR",
+        "rows": 1184,
+        "actual_units": 1678.0,
+        "predicted_units": 1708.632891790428,
+        "mae": 0.2541674973470063,
+        "wape": 0.17934107083364448
+      }
+    ],
+    "categories_by_wape": [
+      {
+        "commodity_desc": "BOTTLE DEPOSITS",
+        "rows": 12,
+        "actual_units": 33.0,
+        "predicted_units": 25.686740967608504,
+        "mae": 1.978179105054972,
+        "wape": 0.7193378563836262
+      },
+      {
+        "commodity_desc": "FLORAL-ACCESSORIES",
+        "rows": 8,
+        "actual_units": 13.0,
+        "predicted_units": 10.50417646952279,
+        "mae": 0.8161750533406051,
+        "wape": 0.5022615712865263
+      },
+      {
+        "commodity_desc": "GARDEN CENTER",
+        "rows": 57,
+        "actual_units": 118.0,
+        "predicted_units": 100.53787753963393,
+        "mae": 1.0110018420681244,
+        "wape": 0.48836529659222955
+      },
+      {
+        "commodity_desc": "OVERNIGHT PHOTOFINISHING",
+        "rows": 19,
+        "actual_units": 31.0,
+        "predicted_units": 25.310227495116752,
+        "mae": 0.6990440165029422,
+        "wape": 0.4284463326953517
+      },
+      {
+        "commodity_desc": "VEAL",
+        "rows": 8,
+        "actual_units": 13.0,
+        "predicted_units": 9.471015794259584,
+        "mae": 0.6806973412905832,
+        "wape": 0.41889067156343585
+      },
+      {
+        "commodity_desc": "CHRISTMAS  SEASONAL",
+        "rows": 234,
+        "actual_units": 413.0,
+        "predicted_units": 331.6148188188681,
+        "mae": 0.7086614588194469,
+        "wape": 0.40151763042070354
+      },
+      {
+        "commodity_desc": "NDAIRY/TEAS/JUICE/SOD",
+        "rows": 1,
+        "actual_units": 2.0,
+        "predicted_units": 1.1998361448915862,
+        "mae": 0.8001638551084138,
+        "wape": 0.4000819275542069
+      },
+      {
+        "commodity_desc": "QUICK SERVICE",
+        "rows": 23,
+        "actual_units": 34.0,
+        "predicted_units": 32.860146814145075,
+        "mae": 0.5814314413592219,
+        "wape": 0.3933212691547677
+      },
+      {
+        "commodity_desc": "PACKAGED NATURAL SNACKS",
+        "rows": 73,
+        "actual_units": 123.0,
+        "predicted_units": 85.30016658662731,
+        "mae": 0.6259137106579524,
+        "wape": 0.37147724291081724
+      },
+      {
+        "commodity_desc": "CITRUS",
+        "rows": 1277,
+        "actual_units": 3093.0,
+        "predicted_units": 2942.1379545511227,
+        "mae": 0.899467845708799,
+        "wape": 0.3713612799774123
+      }
+    ]
+  },
+  "test": {
+    "mae": 0.19715403534361714,
+    "rmse": 0.5593105404150025,
+    "smape": 0.11200223912792971,
+    "wape": 0.13879469703362543,
+    "quantity_bins": [
+      {
+        "quantity_bin": "1",
+        "rows": 292911,
+        "actual_units": 292911.0,
+        "predicted_units": 318533.0325505192,
+        "mae": 0.09968481141296834,
+        "wape": 0.09968481141296834
+      },
+      {
+        "quantity_bin": "2",
+        "rows": 65864,
+        "actual_units": 131728.0,
+        "predicted_units": 122897.0656664989,
+        "mae": 0.3149251120040717,
+        "wape": 0.15746255600203585
+      },
+      {
+        "quantity_bin": "3-5",
+        "rows": 25639,
+        "actual_units": 90544.0,
+        "predicted_units": 79545.60257982364,
+        "mae": 0.6722052335434517,
+        "wape": 0.19034579853795458
+      },
+      {
+        "quantity_bin": "6-10",
+        "rows": 3999,
+        "actual_units": 28244.0,
+        "predicted_units": 23193.655897645156,
+        "mae": 1.6073390203960733,
+        "wape": 0.2275792643592939
+      },
+      {
+        "quantity_bin": "11+",
+        "rows": 628,
+        "actual_units": 9195.0,
+        "predicted_units": 6429.747404226446,
+        "mae": 4.932450582661719,
+        "wape": 0.3368764508876085
+      }
+    ],
+    "departments_by_wape": [
+      {
+        "department": "GARDEN CENTER",
+        "rows": 22,
+        "actual_units": 37.0,
+        "predicted_units": 36.0171571182757,
+        "mae": 0.9899191266440138,
+        "wape": 0.5886005617883325
+      },
+      {
+        "department": "POSTAL CENTER",
+        "rows": 8,
+        "actual_units": 21.0,
+        "predicted_units": 25.899210893567655,
+        "mae": 1.0212866779653407,
+        "wape": 0.3890615916058441
+      },
+      {
+        "department": "TOYS",
+        "rows": 1,
+        "actual_units": 1.0,
+        "predicted_units": 1.377726850898623,
+        "mae": 0.3777268508986229,
+        "wape": 0.3777268508986229
+      },
+      {
+        "department": "RESTAURANT",
+        "rows": 72,
+        "actual_units": 96.0,
+        "predicted_units": 98.92195957627024,
+        "mae": 0.269389572307802,
+        "wape": 0.20204217923085152
+      },
+      {
+        "department": "RX",
+        "rows": 5,
+        "actual_units": 5.0,
+        "predicted_units": 5.994360988569946,
+        "mae": 0.19887219771398934,
+        "wape": 0.19887219771398934
+      },
+      {
+        "department": "PHOTO",
+        "rows": 3,
+        "actual_units": 3.0,
+        "predicted_units": 3.554591540229035,
+        "mae": 0.1848638467430118,
+        "wape": 0.1848638467430118
+      },
+      {
+        "department": "FLORAL",
+        "rows": 628,
+        "actual_units": 742.0,
+        "predicted_units": 714.8492883863752,
+        "mae": 0.20958277715964813,
+        "wape": 0.17738272783862402
+      },
+      {
+        "department": "SALAD BAR",
+        "rows": 1156,
+        "actual_units": 1639.0,
+        "predicted_units": 1692.926375090163,
+        "mae": 0.2454272361756601,
+        "wape": 0.17310182124408974
+      },
+      {
+        "department": "PASTRY",
+        "rows": 5792,
+        "actual_units": 7946.0,
+        "predicted_units": 7955.745423848151,
+        "mae": 0.2359511823674802,
+        "wape": 0.17198958573778572
+      },
+      {
+        "department": "MEAT",
+        "rows": 12671,
+        "actual_units": 18569.0,
+        "predicted_units": 18520.507349995773,
+        "mae": 0.2390788868667956,
+        "wape": 0.16314118021913765
+      }
+    ],
+    "categories_by_wape": [
+      {
+        "commodity_desc": "GARDEN CENTER",
+        "rows": 22,
+        "actual_units": 37.0,
+        "predicted_units": 36.0171571182757,
+        "mae": 0.9899191266440138,
+        "wape": 0.5886005617883325
+      },
+      {
+        "commodity_desc": "CORN",
+        "rows": 25,
+        "actual_units": 106.0,
+        "predicted_units": 117.54244382990285,
+        "mae": 2.1360617238198696,
+        "wape": 0.5037881424103466
+      },
+      {
+        "commodity_desc": "RW FRESH PROCESSED MEAT",
+        "rows": 3,
+        "actual_units": 7.0,
+        "predicted_units": 3.5619932015541753,
+        "mae": 1.146002266148608,
+        "wape": 0.49114382834940346
+      },
+      {
+        "commodity_desc": "OVERNIGHT PHOTOFINISHING",
+        "rows": 24,
+        "actual_units": 52.0,
+        "predicted_units": 36.831637274606635,
+        "mae": 1.040499156245813,
+        "wape": 0.4802303798057599
+      },
+      {
+        "commodity_desc": "FIREWORKS",
+        "rows": 21,
+        "actual_units": 36.0,
+        "predicted_units": 26.405516813318346,
+        "mae": 0.7642305315392088,
+        "wape": 0.4458011433978718
+      },
+      {
+        "commodity_desc": "PWDR/CRYSTL DRNK MX",
+        "rows": 1869,
+        "actual_units": 4286.0,
+        "predicted_units": 4165.6822920742725,
+        "mae": 0.9607374669773261,
+        "wape": 0.41894967937018723
+      },
+      {
+        "commodity_desc": "IN-STORE PHOTOFINISHING",
+        "rows": 106,
+        "actual_units": 160.0,
+        "predicted_units": 136.10519900507785,
+        "mae": 0.6303888330794046,
+        "wape": 0.41763260191510554
+      },
+      {
+        "commodity_desc": "BOTTLE DEPOSITS",
+        "rows": 13,
+        "actual_units": 34.0,
+        "predicted_units": 28.61075309486549,
+        "mae": 1.0540663649029436,
+        "wape": 0.40302537481583134
+      },
+      {
+        "commodity_desc": "LAWN AND GARDEN SHOP",
+        "rows": 2,
+        "actual_units": 2.0,
+        "predicted_units": 2.7928344304838815,
+        "mae": 0.39641721524194073,
+        "wape": 0.39641721524194073
+      },
+      {
+        "commodity_desc": "TOYS",
+        "rows": 1,
+        "actual_units": 1.0,
+        "predicted_units": 1.377726850898623,
+        "mae": 0.3777268508986229,
+        "wape": 0.3777268508986229
+      }
+    ]
+  },
+  "promoted_to_demand_champion": true
+}

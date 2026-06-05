@@ -1,0 +1,1673 @@
+{
+  "features_path": "D:\\PycharmProjects\\Retail_Price_Optimisation\\data\\processed\\retail_modeling_features.parquet",
+  "model_path": "models\\champion_demand_model.pkl",
+  "test_rows": 389041,
+  "overall": {
+    "mae": 0.19715403534361714,
+    "rmse": 0.5593105404150025,
+    "smape": 0.11200223912792971,
+    "wape": 0.13879469703362543
+  },
+  "quantity_bins": [
+    {
+      "quantity_bin": "11+",
+      "rows": 628,
+      "actual_units": 9195.0,
+      "predicted_units": 6429.747404226446,
+      "mae": 4.932450582661719,
+      "wape": 0.3368764508876085
+    },
+    {
+      "quantity_bin": "6-10",
+      "rows": 3999,
+      "actual_units": 28244.0,
+      "predicted_units": 23193.655897645156,
+      "mae": 1.6073390203960733,
+      "wape": 0.2275792643592939
+    },
+    {
+      "quantity_bin": "3-5",
+      "rows": 25639,
+      "actual_units": 90544.0,
+      "predicted_units": 79545.60257982364,
+      "mae": 0.6722052335434517,
+      "wape": 0.19034579853795458
+    },
+    {
+      "quantity_bin": "2",
+      "rows": 65864,
+      "actual_units": 131728.0,
+      "predicted_units": 122897.0656664989,
+      "mae": 0.3149251120040717,
+      "wape": 0.15746255600203585
+    },
+    {
+      "quantity_bin": "1",
+      "rows": 292911,
+      "actual_units": 292911.0,
+      "predicted_units": 318533.0325505192,
+      "mae": 0.09968481141296834,
+      "wape": 0.09968481141296834
+    }
+  ],
+  "departments_by_wape": [
+    {
+      "department": "FLORAL",
+      "rows": 628,
+      "actual_units": 742.0,
+      "predicted_units": 714.8492883863752,
+      "mae": 0.20958277715964813,
+      "wape": 0.17738272783862402
+    },
+    {
+      "department": "SALAD BAR",
+      "rows": 1156,
+      "actual_units": 1639.0,
+      "predicted_units": 1692.926375090163,
+      "mae": 0.2454272361756601,
+      "wape": 0.17310182124408974
+    },
+    {
+      "department": "PASTRY",
+      "rows": 5792,
+      "actual_units": 7946.0,
+      "predicted_units": 7955.745423848151,
+      "mae": 0.2359511823674802,
+      "wape": 0.17198958573778572
+    },
+    {
+      "department": "MEAT",
+      "rows": 12671,
+      "actual_units": 18569.0,
+      "predicted_units": 18520.507349995773,
+      "mae": 0.2390788868667956,
+      "wape": 0.16314118021913765
+    },
+    {
+      "department": "DRUG GM",
+      "rows": 44803,
+      "actual_units": 59963.0,
+      "predicted_units": 58560.94280171085,
+      "mae": 0.21559646603389696,
+      "wape": 0.1610888125630253
+    },
+    {
+      "department": "PRODUCE",
+      "rows": 31607,
+      "actual_units": 48678.0,
+      "predicted_units": 48676.93475489845,
+      "mae": 0.2378730837630922,
+      "wape": 0.15445282383212244
+    },
+    {
+      "department": "NUTRITION",
+      "rows": 5522,
+      "actual_units": 7666.0,
+      "predicted_units": 7540.645479448378,
+      "mae": 0.19072211445057163,
+      "wape": 0.13738162222750544
+    },
+    {
+      "department": "GROCERY",
+      "rows": 255998,
+      "actual_units": 367801.0,
+      "predicted_units": 367513.83438970847,
+      "mae": 0.19448246152952653,
+      "wape": 0.13536428989218555
+    },
+    {
+      "department": "SEAFOOD",
+      "rows": 659,
+      "actual_units": 765.0,
+      "predicted_units": 760.8165132160638,
+      "mae": 0.12461688847117722,
+      "wape": 0.10734971176798142
+    },
+    {
+      "department": "MEAT-PCKGD",
+      "rows": 16842,
+      "actual_units": 23336.0,
+      "predicted_units": 23221.017374723895,
+      "mae": 0.1450750508908513,
+      "wape": 0.10470320565237047
+    },
+    {
+      "department": "SPIRITS",
+      "rows": 366,
+      "actual_units": 413.0,
+      "predicted_units": 421.4384602273248,
+      "mae": 0.10632932466096645,
+      "wape": 0.09422889304095332
+    },
+    {
+      "department": "SEAFOOD-PCKGD",
+      "rows": 2070,
+      "actual_units": 2619.0,
+      "predicted_units": 2643.4639613412596,
+      "mae": 0.11777315422908999,
+      "wape": 0.09308531090271717
+    },
+    {
+      "department": "DELI",
+      "rows": 9172,
+      "actual_units": 10542.0,
+      "predicted_units": 10429.91409380021,
+      "mae": 0.0945011525296664,
+      "wape": 0.08222012625707648
+    },
+    {
+      "department": "COSMETICS",
+      "rows": 1284,
+      "actual_units": 1368.0,
+      "predicted_units": 1353.1755786459823,
+      "mae": 0.0790758723445163,
+      "wape": 0.0742203363233618
+    }
+  ],
+  "categories_by_wape": [
+    {
+      "commodity_desc": "PWDR/CRYSTL DRNK MX",
+      "rows": 1869,
+      "actual_units": 4286.0,
+      "predicted_units": 4165.6822920742725,
+      "mae": 0.9607374669773261,
+      "wape": 0.41894967937018723
+    },
+    {
+      "commodity_desc": "PEPPERS-ALL",
+      "rows": 1311,
+      "actual_units": 2157.0,
+      "predicted_units": 2120.0922333684,
+      "mae": 0.4701782366055238,
+      "wape": 0.28576896995356593
+    },
+    {
+      "commodity_desc": "CIGARETTES",
+      "rows": 1498,
+      "actual_units": 2456.0,
+      "predicted_units": 2425.952081151043,
+      "mae": 0.4644805356509007,
+      "wape": 0.283302867428766
+    },
+    {
+      "commodity_desc": "SOUP",
+      "rows": 8925,
+      "actual_units": 16588.0,
+      "predicted_units": 16529.9690463551,
+      "mae": 0.5255517335214758,
+      "wape": 0.28276761645039616
+    },
+    {
+      "commodity_desc": "CITRUS",
+      "rows": 2138,
+      "actual_units": 5687.0,
+      "predicted_units": 5659.279031045187,
+      "mae": 0.7400233682373538,
+      "wape": 0.2782081873204611
+    },
+    {
+      "commodity_desc": "CHRISTMAS  SEASONAL",
+      "rows": 1202,
+      "actual_units": 1926.0,
+      "predicted_units": 1846.3839963172877,
+      "mae": 0.4438567373688435,
+      "wape": 0.2770071642353842
+    },
+    {
+      "commodity_desc": "ISOTONIC DRINKS",
+      "rows": 1404,
+      "actual_units": 2241.0,
+      "predicted_units": 2188.46906690765,
+      "mae": 0.4323262091423356,
+      "wape": 0.2708549744024271
+    },
+    {
+      "commodity_desc": "BABY FOODS",
+      "rows": 3039,
+      "actual_units": 4788.0,
+      "predicted_units": 4665.198508823598,
+      "mae": 0.4247161985346056,
+      "wape": 0.2695723741325536
+    },
+    {
+      "commodity_desc": "CAT FOOD",
+      "rows": 2674,
+      "actual_units": 4650.0,
+      "predicted_units": 4647.180771974965,
+      "mae": 0.45553485042977077,
+      "wape": 0.261957030118109
+    },
+    {
+      "commodity_desc": "BREAKFAST SWEETS",
+      "rows": 1221,
+      "actual_units": 2273.0,
+      "predicted_units": 2314.720248495376,
+      "mae": 0.4861924880191184,
+      "wape": 0.2611707117779778
+    },
+    {
+      "commodity_desc": "MEAT - SHELF STABLE",
+      "rows": 3696,
+      "actual_units": 6992.0,
+      "predicted_units": 7218.144731189362,
+      "mae": 0.4830464568293568,
+      "wape": 0.2553403467450376
+    },
+    {
+      "commodity_desc": "CANDLES/ACCESSORIES",
+      "rows": 311,
+      "actual_units": 452.0,
+      "predicted_units": 431.4620076017845,
+      "mae": 0.3684981862752923,
+      "wape": 0.25354631843277853
+    },
+    {
+      "commodity_desc": "STATIONERY & SCHOOL SUPPLIES",
+      "rows": 1028,
+      "actual_units": 1349.0,
+      "predicted_units": 1221.8751484412242,
+      "mae": 0.3324723405384906,
+      "wape": 0.25335920390924266
+    },
+    {
+      "commodity_desc": "WATER - CARBONATED/FLVRD DRINK",
+      "rows": 3067,
+      "actual_units": 4945.0,
+      "predicted_units": 4929.1962407947885,
+      "mae": 0.3853359900350634,
+      "wape": 0.23899403062437605
+    },
+    {
+      "commodity_desc": "DRY SAUCES/GRAVY",
+      "rows": 1579,
+      "actual_units": 2649.0,
+      "predicted_units": 2749.467277363493,
+      "mae": 0.37119232133816354,
+      "wape": 0.22125808810606276
+    },
+    {
+      "commodity_desc": "BERRIES",
+      "rows": 831,
+      "actual_units": 1283.0,
+      "predicted_units": 1406.8062885669465,
+      "mae": 0.33894871359525264,
+      "wape": 0.2195373195616952
+    },
+    {
+      "commodity_desc": "ROLLS",
+      "rows": 839,
+      "actual_units": 1205.0,
+      "predicted_units": 1246.8921321926582,
+      "mae": 0.3116930391175848,
+      "wape": 0.21702112848104038
+    },
+    {
+      "commodity_desc": "TURKEY",
+      "rows": 595,
+      "actual_units": 775.0,
+      "predicted_units": 767.4328666034305,
+      "mae": 0.2823921956444366,
+      "wape": 0.21680433084959974
+    },
+    {
+      "commodity_desc": "BEANS - CANNED GLASS & MW",
+      "rows": 2049,
+      "actual_units": 3465.0,
+      "predicted_units": 3608.826087230813,
+      "mae": 0.3652964680808312,
+      "wape": 0.21601514086511492
+    },
+    {
+      "commodity_desc": "DOMESTIC WINE",
+      "rows": 1033,
+      "actual_units": 1334.0,
+      "predicted_units": 1278.0251167932847,
+      "mae": 0.2686343986313408,
+      "wape": 0.20802049009458398
+    },
+    {
+      "commodity_desc": "CHARCOAL AND LIGHTER FLUID",
+      "rows": 289,
+      "actual_units": 412.0,
+      "predicted_units": 373.67410403628855,
+      "mae": 0.2950925599340392,
+      "wape": 0.20699453840033333
+    },
+    {
+      "commodity_desc": "CANDY - PACKAGED",
+      "rows": 6029,
+      "actual_units": 8924.0,
+      "predicted_units": 8384.449653868032,
+      "mae": 0.3045068322283828,
+      "wape": 0.20572295960386824
+    },
+    {
+      "commodity_desc": "PREPARED FOOD",
+      "rows": 597,
+      "actual_units": 858.0,
+      "predicted_units": 821.8443241926841,
+      "mae": 0.2930431619880749,
+      "wape": 0.2039006616630311
+    },
+    {
+      "commodity_desc": "VEGETABLES - ALL OTHERS",
+      "rows": 2881,
+      "actual_units": 4291.0,
+      "predicted_units": 4223.390612052751,
+      "mae": 0.2944686042067657,
+      "wape": 0.1977077717827294
+    },
+    {
+      "commodity_desc": "DOG FOODS",
+      "rows": 2112,
+      "actual_units": 3824.0,
+      "predicted_units": 3552.851542318664,
+      "mae": 0.3529257635230277,
+      "wape": 0.19492134219681861
+    },
+    {
+      "commodity_desc": "GREETING CARDS/WRAP/PARTY SPLY",
+      "rows": 1865,
+      "actual_units": 2239.0,
+      "predicted_units": 2121.430861545381,
+      "mae": 0.23037062980160766,
+      "wape": 0.1918897831978554
+    },
+    {
+      "commodity_desc": "SEAFOOD - SHELF STABLE",
+      "rows": 1374,
+      "actual_units": 3621.0,
+      "predicted_units": 3738.5147133573237,
+      "mae": 0.48640726176177274,
+      "wape": 0.18456878698168344
+    },
+    {
+      "commodity_desc": "DRY BN/VEG/POTATO/RICE",
+      "rows": 3382,
+      "actual_units": 4524.0,
+      "predicted_units": 4466.782162025969,
+      "mae": 0.24168022228669767,
+      "wape": 0.18067252691724392
+    },
+    {
+      "commodity_desc": "BEEF",
+      "rows": 6707,
+      "actual_units": 10039.0,
+      "predicted_units": 10008.55847330637,
+      "mae": 0.26446790726566766,
+      "wape": 0.17668953621185704
+    },
+    {
+      "commodity_desc": "INFANT FORMULA",
+      "rows": 395,
+      "actual_units": 959.0,
+      "predicted_units": 934.0019470508811,
+      "mae": 0.42887154139225014,
+      "wape": 0.1766467766944096
+    },
+    {
+      "commodity_desc": "REFRIGERATED",
+      "rows": 1277,
+      "actual_units": 1751.0,
+      "predicted_units": 1663.3210633113397,
+      "mae": 0.2418126922472706,
+      "wape": 0.17635340262693577
+    },
+    {
+      "commodity_desc": "VEGETABLES - SHELF STABLE",
+      "rows": 7434,
+      "actual_units": 14559.0,
+      "predicted_units": 14918.091542803268,
+      "mae": 0.34228729042589695,
+      "wape": 0.17477599539982952
+    },
+    {
+      "commodity_desc": "PAPER TOWELS",
+      "rows": 1628,
+      "actual_units": 2576.0,
+      "predicted_units": 2602.335403349208,
+      "mae": 0.2743758594377874,
+      "wape": 0.17340213476891222
+    },
+    {
+      "commodity_desc": "SALAD BAR",
+      "rows": 1155,
+      "actual_units": 1638.0,
+      "predicted_units": 1691.914327833097,
+      "mae": 0.24562929676363393,
+      "wape": 0.17320014515384444
+    },
+    {
+      "commodity_desc": "MISC WINE",
+      "rows": 279,
+      "actual_units": 336.0,
+      "predicted_units": 305.92722407664183,
+      "mae": 0.20453713699306145,
+      "wape": 0.16983887268173853
+    },
+    {
+      "commodity_desc": "HISPANIC",
+      "rows": 4142,
+      "actual_units": 5452.0,
+      "predicted_units": 5418.339026048498,
+      "mae": 0.22205831215853783,
+      "wape": 0.16870240809990164
+    },
+    {
+      "commodity_desc": "FLORAL-FRESH CUT",
+      "rows": 319,
+      "actual_units": 370.0,
+      "predicted_units": 355.82518059710264,
+      "mae": 0.19435959485927468,
+      "wape": 0.16756948854083412
+    },
+    {
+      "commodity_desc": "EGGS",
+      "rows": 3635,
+      "actual_units": 5823.0,
+      "predicted_units": 5940.901685266212,
+      "mae": 0.2653171278164558,
+      "wape": 0.1656238639211432
+    },
+    {
+      "commodity_desc": "CANNED MILK",
+      "rows": 407,
+      "actual_units": 708.0,
+      "predicted_units": 733.6332941437536,
+      "mae": 0.2865339986769276,
+      "wape": 0.16471657833546544
+    },
+    {
+      "commodity_desc": "FROZEN PIZZA",
+      "rows": 6946,
+      "actual_units": 11228.0,
+      "predicted_units": 11313.138001189116,
+      "mae": 0.2659092945241041,
+      "wape": 0.1644999964164969
+    },
+    {
+      "commodity_desc": "ELECTRICAL SUPPPLIES",
+      "rows": 638,
+      "actual_units": 791.0,
+      "predicted_units": 774.6035578504939,
+      "mae": 0.2035569717524627,
+      "wape": 0.1641837521846665
+    },
+    {
+      "commodity_desc": "LAXATIVES",
+      "rows": 254,
+      "actual_units": 342.0,
+      "predicted_units": 343.0376549205663,
+      "mae": 0.21866337754777188,
+      "wape": 0.1623991166582867
+    },
+    {
+      "commodity_desc": "VEGETABLES SALAD",
+      "rows": 1314,
+      "actual_units": 1823.0,
+      "predicted_units": 1830.9182919925415,
+      "mae": 0.22469816644434135,
+      "wape": 0.16196017043766567
+    },
+    {
+      "commodity_desc": "VALENTINE",
+      "rows": 315,
+      "actual_units": 375.0,
+      "predicted_units": 365.14555516654036,
+      "mae": 0.19218597453113373,
+      "wape": 0.16143621860615234
+    },
+    {
+      "commodity_desc": "TOYS AND GAMES",
+      "rows": 426,
+      "actual_units": 606.0,
+      "predicted_units": 592.5426446251822,
+      "mae": 0.228778226750412,
+      "wape": 0.16082429801266587
+    },
+    {
+      "commodity_desc": "DIETARY AID PRODUCTS",
+      "rows": 391,
+      "actual_units": 537.0,
+      "predicted_units": 512.9532977915338,
+      "mae": 0.22046699523007768,
+      "wape": 0.16052624792357612
+    },
+    {
+      "commodity_desc": "FROZEN",
+      "rows": 442,
+      "actual_units": 550.0,
+      "predicted_units": 552.0086588727254,
+      "mae": 0.19939422247307792,
+      "wape": 0.16024044787836444
+    },
+    {
+      "commodity_desc": "IMPORTED WINE",
+      "rows": 414,
+      "actual_units": 493.0,
+      "predicted_units": 464.93690574144875,
+      "mae": 0.18529599109266032,
+      "wape": 0.15560353004535774
+    },
+    {
+      "commodity_desc": "DRY MIX DESSERTS",
+      "rows": 1530,
+      "actual_units": 2353.0,
+      "predicted_units": 2335.7528225616015,
+      "mae": 0.23739950633448548,
+      "wape": 0.15436516986475254
+    },
+    {
+      "commodity_desc": "FRZN MEAT/MEAT DINNERS",
+      "rows": 8960,
+      "actual_units": 12954.0,
+      "predicted_units": 13078.471082498003,
+      "mae": 0.22247110227785,
+      "wape": 0.1538784218318308
+    },
+    {
+      "commodity_desc": "DINNER MXS:DRY",
+      "rows": 3076,
+      "actual_units": 4918.0,
+      "predicted_units": 4967.720130888219,
+      "mae": 0.24485392175601892,
+      "wape": 0.15314572251352465
+    },
+    {
+      "commodity_desc": "CANDY - CHECKLANE",
+      "rows": 4522,
+      "actual_units": 8116.0,
+      "predicted_units": 8137.80815393401,
+      "mae": 0.2739951677513344,
+      "wape": 0.15266216714779868
+    },
+    {
+      "commodity_desc": "BEERS/ALES",
+      "rows": 2545,
+      "actual_units": 3128.0,
+      "predicted_units": 3064.6115418611544,
+      "mae": 0.1847983194635324,
+      "wape": 0.15035541017733053
+    },
+    {
+      "commodity_desc": "HOT DOGS",
+      "rows": 1449,
+      "actual_units": 2319.0,
+      "predicted_units": 2408.709210562037,
+      "mae": 0.23981756639189125,
+      "wape": 0.14984719866401483
+    },
+    {
+      "commodity_desc": "APPLES",
+      "rows": 2253,
+      "actual_units": 3193.0,
+      "predicted_units": 3287.62031931578,
+      "mae": 0.2098129045177272,
+      "wape": 0.1480452470649669
+    },
+    {
+      "commodity_desc": "YOGURT",
+      "rows": 6619,
+      "actual_units": 11662.0,
+      "predicted_units": 11694.886759014094,
+      "mae": 0.25888173624535743,
+      "wape": 0.1469334772944624
+    },
+    {
+      "commodity_desc": "PLASTIC HOUSEWARES",
+      "rows": 442,
+      "actual_units": 579.0,
+      "predicted_units": 539.4900237800473,
+      "mae": 0.19179138496913575,
+      "wape": 0.1464106945705665
+    },
+    {
+      "commodity_desc": "BAKING MIXES",
+      "rows": 2948,
+      "actual_units": 4243.0,
+      "predicted_units": 4254.820315424744,
+      "mae": 0.2102167675697885,
+      "wape": 0.14605680669237248
+    },
+    {
+      "commodity_desc": "CHICKEN",
+      "rows": 2411,
+      "actual_units": 3856.0,
+      "predicted_units": 3869.0707424970456,
+      "mae": 0.23151152322674048,
+      "wape": 0.14475474131215543
+    },
+    {
+      "commodity_desc": "TROPICAL FRUIT",
+      "rows": 2066,
+      "actual_units": 6336.0,
+      "predicted_units": 6387.5986123401435,
+      "mae": 0.4342119785285975,
+      "wape": 0.14158490335228574
+    },
+    {
+      "commodity_desc": "MARGARINES",
+      "rows": 2241,
+      "actual_units": 2834.0,
+      "predicted_units": 2817.0084291431613,
+      "mae": 0.17808823729001516,
+      "wape": 0.14082418481542838
+    },
+    {
+      "commodity_desc": "BREAD",
+      "rows": 1533,
+      "actual_units": 1938.0,
+      "predicted_units": 1908.3956563767485,
+      "mae": 0.17666597043511828,
+      "wape": 0.13974661128846044
+    },
+    {
+      "commodity_desc": "MISCELLANEOUS",
+      "rows": 387,
+      "actual_units": 504.0,
+      "predicted_units": 467.37828551375145,
+      "mae": 0.18191689810696493,
+      "wape": 0.13968618961784807
+    },
+    {
+      "commodity_desc": "BATH TISSUES",
+      "rows": 2189,
+      "actual_units": 2792.0,
+      "predicted_units": 2826.2551134290643,
+      "mae": 0.1779634388905237,
+      "wape": 0.1395279254052136
+    },
+    {
+      "commodity_desc": "BAG SNACKS",
+      "rows": 10342,
+      "actual_units": 13184.0,
+      "predicted_units": 13501.363938374421,
+      "mae": 0.17513579609000315,
+      "wape": 0.13738276723018908
+    },
+    {
+      "commodity_desc": "ONIONS",
+      "rows": 2429,
+      "actual_units": 3255.0,
+      "predicted_units": 3300.8910255157784,
+      "mae": 0.18281689263530457,
+      "wape": 0.13642464891279715
+    },
+    {
+      "commodity_desc": "FITNESS&DIET",
+      "rows": 405,
+      "actual_units": 891.0,
+      "predicted_units": 898.820359053452,
+      "mae": 0.2996673032140518,
+      "wape": 0.13621241055184172
+    },
+    {
+      "commodity_desc": "VALUE ADDED VEGETABLES",
+      "rows": 365,
+      "actual_units": 452.0,
+      "predicted_units": 432.7502677691775,
+      "mae": 0.16790738768490296,
+      "wape": 0.1355889303207734
+    },
+    {
+      "commodity_desc": "AIR CARE",
+      "rows": 882,
+      "actual_units": 1094.0,
+      "predicted_units": 1061.0574152177098,
+      "mae": 0.1673702184919528,
+      "wape": 0.13493650156298206
+    },
+    {
+      "commodity_desc": "BROCCOLI/CAULIFLOWER",
+      "rows": 635,
+      "actual_units": 903.0,
+      "predicted_units": 896.5790417082479,
+      "mae": 0.19026599450811849,
+      "wape": 0.13379723866296261
+    },
+    {
+      "commodity_desc": "PORK",
+      "rows": 2051,
+      "actual_units": 2820.0,
+      "predicted_units": 2819.559530433389,
+      "mae": 0.18326912234057036,
+      "wape": 0.13329254252500347
+    },
+    {
+      "commodity_desc": "SOFT DRINKS",
+      "rows": 15754,
+      "actual_units": 24756.0,
+      "predicted_units": 24756.265746715344,
+      "mae": 0.20746636022315407,
+      "wape": 0.13202557113247573
+    },
+    {
+      "commodity_desc": "CANNED JUICES",
+      "rows": 4834,
+      "actual_units": 6117.0,
+      "predicted_units": 6003.819153325912,
+      "mae": 0.16566068626456018,
+      "wape": 0.13091446091268333
+    },
+    {
+      "commodity_desc": "PASTA SAUCE",
+      "rows": 2580,
+      "actual_units": 3457.0,
+      "predicted_units": 3350.167711756835,
+      "mae": 0.17235858191448045,
+      "wape": 0.12863324886877628
+    },
+    {
+      "commodity_desc": "SMOKED MEATS",
+      "rows": 798,
+      "actual_units": 905.0,
+      "predicted_units": 903.5151655766624,
+      "mae": 0.14415556995137102,
+      "wape": 0.12711176223336362
+    },
+    {
+      "commodity_desc": "SNACKS",
+      "rows": 275,
+      "actual_units": 320.0,
+      "predicted_units": 323.5713593800799,
+      "mae": 0.14766877164739506,
+      "wape": 0.12690285063448012
+    },
+    {
+      "commodity_desc": "PET CARE SUPPLIES",
+      "rows": 507,
+      "actual_units": 586.0,
+      "predicted_units": 566.3752457835844,
+      "mae": 0.14627594122501886,
+      "wape": 0.12655614710082688
+    },
+    {
+      "commodity_desc": "POTATOES",
+      "rows": 2383,
+      "actual_units": 3310.0,
+      "predicted_units": 3295.8453911937936,
+      "mae": 0.1744306779655428,
+      "wape": 0.12557954851718686
+    },
+    {
+      "commodity_desc": "LUNCHMEAT",
+      "rows": 5259,
+      "actual_units": 7324.0,
+      "predicted_units": 7214.876969900797,
+      "mae": 0.17342059740971305,
+      "wape": 0.12452470259116342
+    },
+    {
+      "commodity_desc": "REFRGRATD DOUGH PRODUCTS",
+      "rows": 3460,
+      "actual_units": 4807.0,
+      "predicted_units": 4836.950364229249,
+      "mae": 0.17035210885664231,
+      "wape": 0.12261666250134855
+    },
+    {
+      "commodity_desc": "ORGANICS FRUIT & VEGETABLES",
+      "rows": 1165,
+      "actual_units": 1314.0,
+      "predicted_units": 1285.447380514574,
+      "mae": 0.13774315593047087,
+      "wape": 0.12212387873591976
+    },
+    {
+      "commodity_desc": "BROOMS AND MOPS",
+      "rows": 568,
+      "actual_units": 668.0,
+      "predicted_units": 670.5194167108464,
+      "mae": 0.14248433589773773,
+      "wape": 0.12115434549388478
+    },
+    {
+      "commodity_desc": "DRIED FRUIT",
+      "rows": 667,
+      "actual_units": 795.0,
+      "predicted_units": 782.1181936587384,
+      "mae": 0.14399221601177953,
+      "wape": 0.12080856362246156
+    },
+    {
+      "commodity_desc": "DRY NOODLES/PASTA",
+      "rows": 2973,
+      "actual_units": 3821.0,
+      "predicted_units": 3835.2717847363074,
+      "mae": 0.15387504210936728,
+      "wape": 0.11972533373230801
+    },
+    {
+      "commodity_desc": "VITAMINS",
+      "rows": 476,
+      "actual_units": 634.0,
+      "predicted_units": 695.6569029115632,
+      "mae": 0.15796175894403422,
+      "wape": 0.1185958947276976
+    },
+    {
+      "commodity_desc": "HEAT/SERVE",
+      "rows": 1032,
+      "actual_units": 1339.0,
+      "predicted_units": 1273.0024487677683,
+      "mae": 0.15317336861357667,
+      "wape": 0.11805445586946312
+    },
+    {
+      "commodity_desc": "FRUIT - SHELF STABLE",
+      "rows": 3717,
+      "actual_units": 5489.0,
+      "predicted_units": 5516.543832410046,
+      "mae": 0.1741864488229642,
+      "wape": 0.11795427769629403
+    },
+    {
+      "commodity_desc": "OLIVES",
+      "rows": 455,
+      "actual_units": 540.0,
+      "predicted_units": 536.363830421673,
+      "mae": 0.13930492676674366,
+      "wape": 0.11737729940531177
+    },
+    {
+      "commodity_desc": "COOKWARE & BAKEWARE",
+      "rows": 275,
+      "actual_units": 321.0,
+      "predicted_units": 318.66944977971673,
+      "mae": 0.13533428851472104,
+      "wape": 0.11594058984906008
+    },
+    {
+      "commodity_desc": "MUSHROOMS",
+      "rows": 783,
+      "actual_units": 983.0,
+      "predicted_units": 952.4085801339706,
+      "mae": 0.1442339210176705,
+      "wape": 0.1148882605868118
+    },
+    {
+      "commodity_desc": "NUTS",
+      "rows": 421,
+      "actual_units": 481.0,
+      "predicted_units": 462.6109645930352,
+      "mae": 0.13105291904328736,
+      "wape": 0.11470536157427023
+    },
+    {
+      "commodity_desc": "VALUE ADDED FRUIT",
+      "rows": 640,
+      "actual_units": 724.0,
+      "predicted_units": 705.0829133887505,
+      "mae": 0.128543285451009,
+      "wape": 0.11362942360310187
+    },
+    {
+      "commodity_desc": "FLUID MILK PRODUCTS",
+      "rows": 9645,
+      "actual_units": 19755.0,
+      "predicted_units": 19439.821614185406,
+      "mae": 0.23067248403537055,
+      "wape": 0.11262141779403438
+    },
+    {
+      "commodity_desc": "SNACK NUTS",
+      "rows": 959,
+      "actual_units": 1174.0,
+      "predicted_units": 1155.0828342843465,
+      "mae": 0.1372670755992452,
+      "wape": 0.11212872700142772
+    },
+    {
+      "commodity_desc": "COCOA MIXES",
+      "rows": 873,
+      "actual_units": 1088.0,
+      "predicted_units": 1069.645790471478,
+      "mae": 0.1378277736345015,
+      "wape": 0.11059158674900717
+    },
+    {
+      "commodity_desc": "FIRST AID PRODUCTS",
+      "rows": 486,
+      "actual_units": 528.0,
+      "predicted_units": 516.6801235477931,
+      "mae": 0.11909422751466346,
+      "wape": 0.10962082305326978
+    },
+    {
+      "commodity_desc": "FACIAL TISS/DNR NAPKIN",
+      "rows": 1437,
+      "actual_units": 1951.0,
+      "predicted_units": 1925.1643189021324,
+      "mae": 0.1483073795575486,
+      "wape": 0.10923511246755374
+    },
+    {
+      "commodity_desc": "HERBS",
+      "rows": 571,
+      "actual_units": 653.0,
+      "predicted_units": 644.3400875075192,
+      "mae": 0.12322123386224643,
+      "wape": 0.1077478170525922
+    },
+    {
+      "commodity_desc": "HOUSEHOLD CLEANG NEEDS",
+      "rows": 1608,
+      "actual_units": 1832.0,
+      "predicted_units": 1758.3687308912808,
+      "mae": 0.12073743733672972,
+      "wape": 0.10597478124315578
+    },
+    {
+      "commodity_desc": "BUTTER",
+      "rows": 901,
+      "actual_units": 1250.0,
+      "predicted_units": 1235.2683374308774,
+      "mae": 0.14636667801704184,
+      "wape": 0.10550110151468375
+    },
+    {
+      "commodity_desc": "CONDIMENTS/SAUCES",
+      "rows": 3531,
+      "actual_units": 4076.0,
+      "predicted_units": 4058.8965658681273,
+      "mae": 0.12140928548431938,
+      "wape": 0.10517570830351614
+    },
+    {
+      "commodity_desc": "BAKED SWEET GOODS",
+      "rows": 4349,
+      "actual_units": 5097.0,
+      "predicted_units": 5132.13773096769,
+      "mae": 0.1231660177623322,
+      "wape": 0.10509103614839764
+    },
+    {
+      "commodity_desc": "SALAD MIX",
+      "rows": 2485,
+      "actual_units": 3158.0,
+      "predicted_units": 3109.287447652427,
+      "mae": 0.13256525794060253,
+      "wape": 0.10431433374996749
+    },
+    {
+      "commodity_desc": "BATTERIES",
+      "rows": 505,
+      "actual_units": 594.0,
+      "predicted_units": 572.8653713837607,
+      "mae": 0.12192457761176298,
+      "wape": 0.1036564169931655
+    },
+    {
+      "commodity_desc": "CAKES",
+      "rows": 745,
+      "actual_units": 808.0,
+      "predicted_units": 784.2766704811261,
+      "mae": 0.1096565171471483,
+      "wape": 0.10110656593394243
+    },
+    {
+      "commodity_desc": "FRZN JCE CONC/DRNKS",
+      "rows": 472,
+      "actual_units": 861.0,
+      "predicted_units": 880.2611024837366,
+      "mae": 0.1836671101125764,
+      "wape": 0.10068626710004187
+    },
+    {
+      "commodity_desc": "SEAFOOD-FRESH",
+      "rows": 686,
+      "actual_units": 830.0,
+      "predicted_units": 823.7853837760595,
+      "mae": 0.12130193973011984,
+      "wape": 0.10025678392152074
+    },
+    {
+      "commodity_desc": "REFRGRATD JUICES/DRNKS",
+      "rows": 4259,
+      "actual_units": 5245.0,
+      "predicted_units": 5404.171500844248,
+      "mae": 0.12310849804227461,
+      "wape": 0.09996550870582413
+    },
+    {
+      "commodity_desc": "WAREHOUSE SNACKS",
+      "rows": 1127,
+      "actual_units": 1348.0,
+      "predicted_units": 1320.2679987571842,
+      "mae": 0.11859602898837247,
+      "wape": 0.09915261474027875
+    },
+    {
+      "commodity_desc": "SEAFOOD - FROZEN",
+      "rows": 1587,
+      "actual_units": 2034.0,
+      "predicted_units": 2066.0338995804636,
+      "mae": 0.1270442254046287,
+      "wape": 0.09912447675375896
+    },
+    {
+      "commodity_desc": "BABY HBC",
+      "rows": 795,
+      "actual_units": 891.0,
+      "predicted_units": 863.2377427216422,
+      "mae": 0.11018383500696932,
+      "wape": 0.09831217601631943
+    },
+    {
+      "commodity_desc": "BAKING NEEDS",
+      "rows": 3107,
+      "actual_units": 3941.0,
+      "predicted_units": 3928.7757771975002,
+      "mae": 0.12384252991416529,
+      "wape": 0.09763479838703668
+    },
+    {
+      "commodity_desc": "MISC. DAIRY",
+      "rows": 1455,
+      "actual_units": 1703.0,
+      "predicted_units": 1702.6630529585348,
+      "mae": 0.11192884530713634,
+      "wape": 0.09562916613146412
+    },
+    {
+      "commodity_desc": "KITCHEN GADGETS",
+      "rows": 354,
+      "actual_units": 387.0,
+      "predicted_units": 379.82657225286187,
+      "mae": 0.10284001479633634,
+      "wape": 0.09407071120905185
+    },
+    {
+      "commodity_desc": "CONVENIENT BRKFST/WHLSM SNACKS",
+      "rows": 3639,
+      "actual_units": 4312.0,
+      "predicted_units": 4265.004640653364,
+      "mae": 0.10996908684835559,
+      "wape": 0.09280554430453757
+    },
+    {
+      "commodity_desc": "BACON",
+      "rows": 1777,
+      "actual_units": 2643.0,
+      "predicted_units": 2686.967052570141,
+      "mae": 0.13789056069944233,
+      "wape": 0.0927096202659512
+    },
+    {
+      "commodity_desc": "FRZN NOVELTIES/WTR ICE",
+      "rows": 1661,
+      "actual_units": 1922.0,
+      "predicted_units": 1898.3883491969582,
+      "mae": 0.1072492197898598,
+      "wape": 0.09268519982880183
+    },
+    {
+      "commodity_desc": "CEREAL/BREAKFAST",
+      "rows": 345,
+      "actual_units": 397.0,
+      "predicted_units": 383.44094991398805,
+      "mae": 0.10624199624596133,
+      "wape": 0.09232616802230896
+    },
+    {
+      "commodity_desc": "COOKIES/CONES",
+      "rows": 3387,
+      "actual_units": 4061.0,
+      "predicted_units": 3945.517040071368,
+      "mae": 0.11046211568689414,
+      "wape": 0.09212883177333427
+    },
+    {
+      "commodity_desc": "ORAL HYGIENE PRODUCTS",
+      "rows": 1664,
+      "actual_units": 1926.0,
+      "predicted_units": 1886.1480231470978,
+      "mae": 0.10630700026587912,
+      "wape": 0.09184571570219256
+    },
+    {
+      "commodity_desc": "NEWSPAPER",
+      "rows": 839,
+      "actual_units": 991.0,
+      "predicted_units": 1056.0807874961852,
+      "mae": 0.10826063659942323,
+      "wape": 0.09165557427539464
+    },
+    {
+      "commodity_desc": "PROCESSED",
+      "rows": 852,
+      "actual_units": 966.0,
+      "predicted_units": 927.7599869105005,
+      "mae": 0.10136001482614766,
+      "wape": 0.08939827394604329
+    },
+    {
+      "commodity_desc": "HOT CEREAL",
+      "rows": 1312,
+      "actual_units": 1506.0,
+      "predicted_units": 1494.4243006997349,
+      "mae": 0.10187049190417889,
+      "wape": 0.0887477326549022
+    },
+    {
+      "commodity_desc": "LIQUOR",
+      "rows": 474,
+      "actual_units": 530.0,
+      "predicted_units": 537.4170862320325,
+      "mae": 0.09840281976624228,
+      "wape": 0.08800554069660158
+    },
+    {
+      "commodity_desc": "CHICKEN/POULTRY",
+      "rows": 865,
+      "actual_units": 1035.0,
+      "predicted_units": 1018.7941721925574,
+      "mae": 0.1045686415172003,
+      "wape": 0.0873931158573703
+    },
+    {
+      "commodity_desc": "HAIR CARE PRODUCTS",
+      "rows": 2001,
+      "actual_units": 2163.0,
+      "predicted_units": 2120.2864822804204,
+      "mae": 0.093504802932874,
+      "wape": 0.08650166928741602
+    },
+    {
+      "commodity_desc": "DINNER SAUSAGE",
+      "rows": 1570,
+      "actual_units": 2209.0,
+      "predicted_units": 2199.7686713326257,
+      "mae": 0.1176065555396637,
+      "wape": 0.08358637039260843
+    },
+    {
+      "commodity_desc": "PAPER HOUSEWARES",
+      "rows": 1843,
+      "actual_units": 2140.0,
+      "predicted_units": 2121.555682743003,
+      "mae": 0.09642772189622999,
+      "wape": 0.08304499600689338
+    },
+    {
+      "commodity_desc": "DEODORANTS",
+      "rows": 803,
+      "actual_units": 875.0,
+      "predicted_units": 868.5935551894371,
+      "mae": 0.09014202148790963,
+      "wape": 0.08272462086261878
+    },
+    {
+      "commodity_desc": "SPICES & EXTRACTS",
+      "rows": 2415,
+      "actual_units": 2697.0,
+      "predicted_units": 2654.297880392973,
+      "mae": 0.09080724682577791,
+      "wape": 0.0813123845325375
+    },
+    {
+      "commodity_desc": "MEAT - MISC",
+      "rows": 1326,
+      "actual_units": 1653.0,
+      "predicted_units": 1610.9514331846535,
+      "mae": 0.10090193720643054,
+      "wape": 0.08094129990062122
+    },
+    {
+      "commodity_desc": "ANALGESICS",
+      "rows": 947,
+      "actual_units": 1122.0,
+      "predicted_units": 1172.536049649173,
+      "mae": 0.09566358164900991,
+      "wape": 0.08074279128485953
+    },
+    {
+      "commodity_desc": "INFANT CARE PRODUCTS",
+      "rows": 251,
+      "actual_units": 275.0,
+      "predicted_units": 269.6542802018379,
+      "mae": 0.08834364648537156,
+      "wape": 0.0806336555193755
+    },
+    {
+      "commodity_desc": "HAND/BODY/FACIAL PRODUCTS",
+      "rows": 646,
+      "actual_units": 708.0,
+      "predicted_units": 686.7757828479379,
+      "mae": 0.08804764556814729,
+      "wape": 0.08033725852686886
+    },
+    {
+      "commodity_desc": "SOAP - LIQUID & BAR",
+      "rows": 1173,
+      "actual_units": 1330.0,
+      "predicted_units": 1300.6475393283613,
+      "mae": 0.08966561330144725,
+      "wape": 0.07908102586661475
+    },
+    {
+      "commodity_desc": "FROZEN PIE/DESSERTS",
+      "rows": 1347,
+      "actual_units": 1822.0,
+      "predicted_units": 1804.7948864628095,
+      "mae": 0.10664430722716112,
+      "wape": 0.07884186708835676
+    },
+    {
+      "commodity_desc": "TOMATOES",
+      "rows": 1995,
+      "actual_units": 2512.0,
+      "predicted_units": 2497.297511738556,
+      "mae": 0.09902454142665654,
+      "wape": 0.07864409241488049
+    },
+    {
+      "commodity_desc": "COOKIES",
+      "rows": 702,
+      "actual_units": 851.0,
+      "predicted_units": 852.2542979845501,
+      "mae": 0.09363837618939022,
+      "wape": 0.07724340785540768
+    },
+    {
+      "commodity_desc": "SALADS/DIPS",
+      "rows": 1089,
+      "actual_units": 1191.0,
+      "predicted_units": 1210.5372982969225,
+      "mae": 0.0843742914925329,
+      "wape": 0.077148281641787
+    },
+    {
+      "commodity_desc": "ANTACIDS",
+      "rows": 335,
+      "actual_units": 394.0,
+      "predicted_units": 411.2631556676837,
+      "mae": 0.09065408174688712,
+      "wape": 0.07707897813504361
+    },
+    {
+      "commodity_desc": "SUGARS/SWEETNERS",
+      "rows": 1884,
+      "actual_units": 2290.0,
+      "predicted_units": 2265.7977252771143,
+      "mae": 0.09344741350510218,
+      "wape": 0.07687988080507097
+    },
+    {
+      "commodity_desc": "BREAKFAST SAUSAGE/SANDWICHES",
+      "rows": 2311,
+      "actual_units": 3196.0,
+      "predicted_units": 3219.0848688686892,
+      "mae": 0.10361337116094846,
+      "wape": 0.0749219339026758
+    },
+    {
+      "commodity_desc": "CAT LITTER",
+      "rows": 553,
+      "actual_units": 633.0,
+      "predicted_units": 626.5020201617006,
+      "mae": 0.08535615629398058,
+      "wape": 0.07456864838952806
+    },
+    {
+      "commodity_desc": "CHIPS&SNACKS",
+      "rows": 296,
+      "actual_units": 331.0,
+      "predicted_units": 330.4406685989708,
+      "mae": 0.08309133359126576,
+      "wape": 0.07430524091545215
+    },
+    {
+      "commodity_desc": "MAKEUP AND TREATMENT",
+      "rows": 1014,
+      "actual_units": 1083.0,
+      "predicted_units": 1065.898656534072,
+      "mae": 0.07907194810754144,
+      "wape": 0.07403412315886151
+    },
+    {
+      "commodity_desc": "BAKED BREAD/BUNS/ROLLS",
+      "rows": 11308,
+      "actual_units": 15905.0,
+      "predicted_units": 15815.134376133947,
+      "mae": 0.10408126681251063,
+      "wape": 0.07399880321382397
+    },
+    {
+      "commodity_desc": "WATER",
+      "rows": 455,
+      "actual_units": 827.0,
+      "predicted_units": 843.309637815188,
+      "mae": 0.13154592721171707,
+      "wape": 0.07237411956630141
+    },
+    {
+      "commodity_desc": "SHAVING CARE PRODUCTS",
+      "rows": 620,
+      "actual_units": 663.0,
+      "predicted_units": 656.525693742894,
+      "mae": 0.07662376750203224,
+      "wape": 0.07165420188726997
+    },
+    {
+      "commodity_desc": "FROZEN MEAT",
+      "rows": 1731,
+      "actual_units": 2149.0,
+      "predicted_units": 2140.3603376040255,
+      "mae": 0.08811339756170646,
+      "wape": 0.07097454219605114
+    },
+    {
+      "commodity_desc": "FLOUR & MEALS",
+      "rows": 604,
+      "actual_units": 653.0,
+      "predicted_units": 661.3946905872144,
+      "mae": 0.07631099951194026,
+      "wape": 0.07058475299419895
+    },
+    {
+      "commodity_desc": "CARROTS",
+      "rows": 1200,
+      "actual_units": 1574.0,
+      "predicted_units": 1593.430394888262,
+      "mae": 0.09180972685379545,
+      "wape": 0.0699947091642659
+    },
+    {
+      "commodity_desc": "POPCORN",
+      "rows": 771,
+      "actual_units": 935.0,
+      "predicted_units": 932.942261248657,
+      "mae": 0.08421493878628473,
+      "wape": 0.06944354845371714
+    },
+    {
+      "commodity_desc": "COLD AND FLU",
+      "rows": 1567,
+      "actual_units": 1779.0,
+      "predicted_units": 1763.3135765277652,
+      "mae": 0.07703704011826817,
+      "wape": 0.06785668457859821
+    },
+    {
+      "commodity_desc": "BOOKSTORE",
+      "rows": 356,
+      "actual_units": 371.0,
+      "predicted_units": 374.0460595160463,
+      "mae": 0.06971379369071594,
+      "wape": 0.06689517669513442
+    },
+    {
+      "commodity_desc": "CHEESE",
+      "rows": 12114,
+      "actual_units": 16938.0,
+      "predicted_units": 16925.164178653748,
+      "mae": 0.09294357776192975,
+      "wape": 0.06647293074790513
+    },
+    {
+      "commodity_desc": "FRZN BREAKFAST FOODS",
+      "rows": 1649,
+      "actual_units": 2015.0,
+      "predicted_units": 1975.6956561248658,
+      "mae": 0.08119710765901751,
+      "wape": 0.06644865038695776
+    },
+    {
+      "commodity_desc": "DIAPERS & DISPOSABLES",
+      "rows": 810,
+      "actual_units": 879.0,
+      "predicted_units": 881.670984906173,
+      "mae": 0.07124361772913843,
+      "wape": 0.06565111531354054
+    },
+    {
+      "commodity_desc": "SALD DRSNG/SNDWCH SPRD",
+      "rows": 3207,
+      "actual_units": 3626.0,
+      "predicted_units": 3620.6382124210313,
+      "mae": 0.07404906209119184,
+      "wape": 0.06549237234596035
+    },
+    {
+      "commodity_desc": "FRZN VEGETABLE/VEG DSH",
+      "rows": 4028,
+      "actual_units": 5846.0,
+      "predicted_units": 5845.441335404315,
+      "mae": 0.09417681438730105,
+      "wape": 0.06488953273213284
+    },
+    {
+      "commodity_desc": "RICE CAKES",
+      "rows": 359,
+      "actual_units": 459.0,
+      "predicted_units": 449.9707077455386,
+      "mae": 0.0815558767730508,
+      "wape": 0.0637877118987478
+    },
+    {
+      "commodity_desc": "ICE CREAM/MILK/SHERBTS",
+      "rows": 3926,
+      "actual_units": 4386.0,
+      "predicted_units": 4388.392513074903,
+      "mae": 0.06970982005040681,
+      "wape": 0.06239871261237965
+    },
+    {
+      "commodity_desc": "CRACKERS/MISC BKD FD",
+      "rows": 5075,
+      "actual_units": 5863.0,
+      "predicted_units": 5795.393377117932,
+      "mae": 0.07162560398509274,
+      "wape": 0.06199896643771886
+    },
+    {
+      "commodity_desc": "SQUASH",
+      "rows": 312,
+      "actual_units": 338.0,
+      "predicted_units": 335.5535774290659,
+      "mae": 0.06621550202138142,
+      "wape": 0.06112200186589054
+    },
+    {
+      "commodity_desc": "COLD CEREAL",
+      "rows": 6005,
+      "actual_units": 6827.0,
+      "predicted_units": 6752.144158376908,
+      "mae": 0.06880670950072693,
+      "wape": 0.06052208738126047
+    },
+    {
+      "commodity_desc": "FRZN POTATOES",
+      "rows": 1542,
+      "actual_units": 1893.0,
+      "predicted_units": 1868.021687041129,
+      "mae": 0.07402699184804387,
+      "wape": 0.06030090936591846
+    },
+    {
+      "commodity_desc": "SINUS AND ALLERGY",
+      "rows": 266,
+      "actual_units": 301.0,
+      "predicted_units": 294.9091219935713,
+      "mae": 0.06812438895454541,
+      "wape": 0.06020294837843547
+    },
+    {
+      "commodity_desc": "DELI MEATS",
+      "rows": 3597,
+      "actual_units": 4085.0,
+      "predicted_units": 4029.277994236002,
+      "mae": 0.06758433847237602,
+      "wape": 0.059510615785835136
+    },
+    {
+      "commodity_desc": "COFFEE",
+      "rows": 2343,
+      "actual_units": 2613.0,
+      "predicted_units": 2591.5832306086495,
+      "mae": 0.06629370866193587,
+      "wape": 0.059443612474135384
+    },
+    {
+      "commodity_desc": "FEMININE HYGIENE",
+      "rows": 836,
+      "actual_units": 899.0,
+      "predicted_units": 891.1608139449329,
+      "mae": 0.06391451906639131,
+      "wape": 0.05943552607286222
+    },
+    {
+      "commodity_desc": "MILK BY-PRODUCTS",
+      "rows": 3681,
+      "actual_units": 4546.0,
+      "predicted_units": 4523.488001660016,
+      "mae": 0.07276680482715349,
+      "wape": 0.0589209433719208
+    },
+    {
+      "commodity_desc": "SHORTENING/OIL",
+      "rows": 1487,
+      "actual_units": 1686.0,
+      "predicted_units": 1648.1620514683184,
+      "mae": 0.06311263356668652,
+      "wape": 0.0556633962714489
+    },
+    {
+      "commodity_desc": "BLEACH",
+      "rows": 555,
+      "actual_units": 600.0,
+      "predicted_units": 596.533941083588,
+      "mae": 0.0597194380452667,
+      "wape": 0.055240480191871694
+    },
+    {
+      "commodity_desc": "GRAPES",
+      "rows": 1149,
+      "actual_units": 1487.0,
+      "predicted_units": 1504.9842827075063,
+      "mae": 0.07143600683225754,
+      "wape": 0.05519836708154936
+    },
+    {
+      "commodity_desc": "PEARS",
+      "rows": 330,
+      "actual_units": 378.0,
+      "predicted_units": 376.79611539312896,
+      "mae": 0.062115431343911384,
+      "wape": 0.05422775752246232
+    },
+    {
+      "commodity_desc": "CHEESES",
+      "rows": 2232,
+      "actual_units": 2439.0,
+      "predicted_units": 2418.183595340214,
+      "mae": 0.05900048197035167,
+      "wape": 0.053993060991318134
+    },
+    {
+      "commodity_desc": "COFFEE FILTERS",
+      "rows": 299,
+      "actual_units": 321.0,
+      "predicted_units": 322.31209435044116,
+      "mae": 0.057495191220179945,
+      "wape": 0.05355471082502743
+    },
+    {
+      "commodity_desc": "PIES",
+      "rows": 456,
+      "actual_units": 502.0,
+      "predicted_units": 498.12615720645204,
+      "mae": 0.05834756682263782,
+      "wape": 0.053000977034109255
+    },
+    {
+      "commodity_desc": "FRZN FRUITS",
+      "rows": 265,
+      "actual_units": 346.0,
+      "predicted_units": 356.4385632368775,
+      "mae": 0.06849547138163456,
+      "wape": 0.05246040438188774
+    },
+    {
+      "commodity_desc": "TEAS",
+      "rows": 659,
+      "actual_units": 694.0,
+      "predicted_units": 693.4419364097541,
+      "mae": 0.055065578719536545,
+      "wape": 0.05228849621927173
+    },
+    {
+      "commodity_desc": "MOLASSES/SYRUP/PANCAKE MIXS",
+      "rows": 968,
+      "actual_units": 1073.0,
+      "predicted_units": 1078.6252206452639,
+      "mae": 0.05658576583084392,
+      "wape": 0.051048482128850804
+    },
+    {
+      "commodity_desc": "PICKLE/RELISH/PKLD VEG",
+      "rows": 1047,
+      "actual_units": 1156.0,
+      "predicted_units": 1144.0202830529647,
+      "mae": 0.055544044483866344,
+      "wape": 0.05030676001263673
+    },
+    {
+      "commodity_desc": "FROZEN BREAD/DOUGH",
+      "rows": 1326,
+      "actual_units": 1651.0,
+      "predicted_units": 1645.871008310141,
+      "mae": 0.06111238925029044,
+      "wape": 0.049082391366374996
+    },
+    {
+      "commodity_desc": "FD WRAPS/BAGS/TRSH BG",
+      "rows": 2404,
+      "actual_units": 2676.0,
+      "predicted_units": 2653.5199910843703,
+      "mae": 0.05340527159982497,
+      "wape": 0.04797693308145711
+    },
+    {
+      "commodity_desc": "PNT BTR/JELLY/JAMS",
+      "rows": 2229,
+      "actual_units": 2533.0,
+      "predicted_units": 2535.896732110582,
+      "mae": 0.05083853600275732,
+      "wape": 0.04473710886306595
+    },
+    {
+      "commodity_desc": "DISHWASH DETERGENTS",
+      "rows": 1133,
+      "actual_units": 1203.0,
+      "predicted_units": 1211.9588610034812,
+      "mae": 0.04645659984069835,
+      "wape": 0.04375338954240335
+    },
+    {
+      "commodity_desc": "LAUNDRY DETERGENTS",
+      "rows": 1378,
+      "actual_units": 1460.0,
+      "predicted_units": 1457.1055166145634,
+      "mae": 0.04471101653379533,
+      "wape": 0.04219984985176025
+    },
+    {
+      "commodity_desc": "LAUNDRY ADDITIVES",
+      "rows": 775,
+      "actual_units": 806.0,
+      "predicted_units": 797.7161824391558,
+      "mae": 0.04368518217132281,
+      "wape": 0.04200498285704116
+    },
+    {
+      "commodity_desc": "MAGAZINE",
+      "rows": 1484,
+      "actual_units": 1534.0,
+      "predicted_units": 1557.0022852339127,
+      "mae": 0.03346265061249592,
+      "wape": 0.03237195143998953
+    }
+  ]
+}

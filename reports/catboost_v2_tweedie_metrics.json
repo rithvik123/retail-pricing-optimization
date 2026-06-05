@@ -1,0 +1,490 @@
+{
+  "model_type": "CatBoostRegressor v2 pricing-safe",
+  "candidate": "catboost_v2_tweedie",
+  "loss_function": "Tweedie:variance_power=1.3",
+  "weighted_high_demand": false,
+  "train_rows": 1575205,
+  "validation_rows": 374586,
+  "test_rows": 389041,
+  "features": [
+    "avg_unit_price",
+    "median_unit_price",
+    "discount_percentage",
+    "is_display",
+    "is_mailer",
+    "week_no",
+    "lag_quantity_1",
+    "lag_quantity_2",
+    "lag_quantity_4",
+    "rolling_quantity_mean_4",
+    "rolling_quantity_mean_8",
+    "rolling_quantity_std_4",
+    "price_change",
+    "price_lag_1",
+    "lag_num_baskets_1",
+    "rolling_num_baskets_mean_4",
+    "lag_num_households_1",
+    "rolling_num_households_mean_4",
+    "lag_total_retail_discount_1",
+    "rolling_retail_discount_mean_4",
+    "lag_total_coupon_discount_1",
+    "rolling_coupon_discount_mean_4",
+    "lag_discount_percentage_1",
+    "rolling_discount_percentage_mean_4",
+    "lag_is_display_1",
+    "lag_is_mailer_1",
+    "log_avg_unit_price",
+    "price_ratio_lag_1",
+    "discount_x_display",
+    "discount_x_mailer",
+    "any_promotion",
+    "lag_velocity_4",
+    "lag_velocity_8",
+    "department",
+    "commodity_desc",
+    "brand",
+    "store_id",
+    "product_id"
+  ],
+  "categorical_features": [
+    "department",
+    "commodity_desc",
+    "brand",
+    "store_id",
+    "product_id"
+  ],
+  "excluded_leakage_features": [
+    "num_baskets",
+    "num_households",
+    "total_retail_discount",
+    "total_coupon_discount"
+  ],
+  "leakage_features_present": [],
+  "scenario_safe": true,
+  "iterations_requested": 500,
+  "best_iteration": 113,
+  "validation": {
+    "mae": 0.4719943697796151,
+    "rmse": 0.960258139389985,
+    "smape": 0.2705524286057417,
+    "wape": 0.3328522913362983,
+    "quantity_bins": [
+      {
+        "quantity_bin": "1",
+        "rows": 283699,
+        "actual_units": 283699.0,
+        "predicted_units": 364776.18416618434,
+        "mae": 0.2857859356789567,
+        "wape": 0.2857859356789567
+      },
+      {
+        "quantity_bin": "2",
+        "rows": 61969,
+        "actual_units": 123938.0,
+        "predicted_units": 102178.46235445209,
+        "mae": 0.5976284939082055,
+        "wape": 0.29881424695410275
+      },
+      {
+        "quantity_bin": "3-5",
+        "rows": 24438,
+        "actual_units": 86214.0,
+        "predicted_units": 53773.87891034466,
+        "mae": 1.5016757913868461,
+        "wape": 0.42566118020172766
+      },
+      {
+        "quantity_bin": "11+",
+        "rows": 630,
+        "actual_units": 9948.0,
+        "predicted_units": 3029.4414937825313,
+        "mae": 10.981838898757887,
+        "wape": 0.6954723066161509
+      },
+      {
+        "quantity_bin": "6-10",
+        "rows": 3850,
+        "actual_units": 27375.0,
+        "predicted_units": 12624.658809213293,
+        "mae": 3.915414856352145,
+        "wape": 0.5506610848203016
+      }
+    ],
+    "departments_by_wape": [
+      {
+        "department": "GARDEN CENTER",
+        "rows": 58,
+        "actual_units": 119.0,
+        "predicted_units": 87.73703761656692,
+        "mae": 1.0785126142176418,
+        "wape": 0.5256616102909515
+      },
+      {
+        "department": "MEAT-WHSE",
+        "rows": 3,
+        "actual_units": 7.0,
+        "predicted_units": 4.6500537722068405,
+        "mae": 1.0494108497171144,
+        "wape": 0.4497475070216205
+      },
+      {
+        "department": "MEAT",
+        "rows": 12718,
+        "actual_units": 19067.0,
+        "predicted_units": 19659.82106830847,
+        "mae": 0.603341661015427,
+        "wape": 0.40243872894499394
+      },
+      {
+        "department": "SALAD BAR",
+        "rows": 1184,
+        "actual_units": 1678.0,
+        "predicted_units": 1703.5524336058907,
+        "mae": 0.5058186602273782,
+        "wape": 0.35690661126890094
+      },
+      {
+        "department": "GROCERY",
+        "rows": 245665,
+        "actual_units": 352577.0,
+        "predicted_units": 357076.9706169879,
+        "mae": 0.48831782986689226,
+        "wape": 0.3402451086549891
+      },
+      {
+        "department": "PRODUCE",
+        "rows": 32150,
+        "actual_units": 48322.0,
+        "predicted_units": 49161.282544337446,
+        "mae": 0.5068655648550339,
+        "wape": 0.33723206634844044
+      },
+      {
+        "department": "MEAT-PCKGD",
+        "rows": 16593,
+        "actual_units": 23188.0,
+        "predicted_units": 23577.449094283267,
+        "mae": 0.4626085109237411,
+        "wape": 0.33103601094348956
+      },
+      {
+        "department": "NUTRITION",
+        "rows": 5215,
+        "actual_units": 7354.0,
+        "predicted_units": 6974.233731126515,
+        "mae": 0.4473175957704101,
+        "wape": 0.31720985340531527
+      },
+      {
+        "department": "PASTRY",
+        "rows": 5791,
+        "actual_units": 8050.0,
+        "predicted_units": 8201.94439611467,
+        "mae": 0.4276080455436947,
+        "wape": 0.3076121977321163
+      },
+      {
+        "department": "DRUG GM",
+        "rows": 40828,
+        "actual_units": 53956.0,
+        "predicted_units": 53089.37135622274,
+        "mae": 0.3914537138134535,
+        "wape": 0.2962093599891704
+      }
+    ],
+    "categories_by_wape": [
+      {
+        "commodity_desc": "BOTTLE DEPOSITS",
+        "rows": 12,
+        "actual_units": 33.0,
+        "predicted_units": 22.74181942173745,
+        "mae": 1.9847213443480152,
+        "wape": 0.7217168524901874
+      },
+      {
+        "commodity_desc": "DOLLAR VALUE PRODUCTS",
+        "rows": 12,
+        "actual_units": 48.0,
+        "predicted_units": 16.876543916763417,
+        "mae": 2.7198688935181643,
+        "wape": 0.6799672233795411
+      },
+      {
+        "commodity_desc": "LAWN AND GARDEN SHOP",
+        "rows": 33,
+        "actual_units": 76.0,
+        "predicted_units": 50.499085078901096,
+        "mae": 1.3041257805087092,
+        "wape": 0.5662651415366763
+      },
+      {
+        "commodity_desc": "CORN",
+        "rows": 219,
+        "actual_units": 1176.0,
+        "predicted_units": 1386.3464054780898,
+        "mae": 2.913593002516489,
+        "wape": 0.5425823703665911
+      },
+      {
+        "commodity_desc": "GARDEN CENTER",
+        "rows": 57,
+        "actual_units": 118.0,
+        "predicted_units": 86.11686647537137,
+        "mae": 1.0865536926917136,
+        "wape": 0.5248606820629464
+      },
+      {
+        "commodity_desc": "INFANT FORMULA",
+        "rows": 374,
+        "actual_units": 979.0,
+        "predicted_units": 694.7856121334544,
+        "mae": 1.3406346666126896,
+        "wape": 0.5121525692677691
+      },
+      {
+        "commodity_desc": "FLORAL-ACCESSORIES",
+        "rows": 8,
+        "actual_units": 13.0,
+        "predicted_units": 10.846349569353977,
+        "mae": 0.8184369511549738,
+        "wape": 0.5036535084030608
+      },
+      {
+        "commodity_desc": "PWDR/CRYSTL DRNK MX",
+        "rows": 2094,
+        "actual_units": 4612.0,
+        "predicted_units": 4794.212183708536,
+        "mae": 1.1069486137905924,
+        "wape": 0.5025911529222681
+      },
+      {
+        "commodity_desc": "OVERNIGHT PHOTOFINISHING",
+        "rows": 19,
+        "actual_units": 31.0,
+        "predicted_units": 26.01011043662473,
+        "mae": 0.8098987333763402,
+        "wape": 0.4963895462629182
+      },
+      {
+        "commodity_desc": "GLASSWARE & DINNERWARE",
+        "rows": 25,
+        "actual_units": 48.0,
+        "predicted_units": 33.98671184971063,
+        "mae": 0.9408504263286837,
+        "wape": 0.49002626371285607
+      }
+    ]
+  },
+  "test": {
+    "mae": 0.47353045337588356,
+    "rmse": 0.9271971581607077,
+    "smape": 0.2724443661931569,
+    "wape": 0.33336125074971157,
+    "quantity_bins": [
+      {
+        "quantity_bin": "1",
+        "rows": 292911,
+        "actual_units": 292911.0,
+        "predicted_units": 376422.0279676479,
+        "mae": 0.2851071757893966,
+        "wape": 0.2851071757893966
+      },
+      {
+        "quantity_bin": "2",
+        "rows": 65864,
+        "actual_units": 131728.0,
+        "predicted_units": 107508.98484261357,
+        "mae": 0.5977611703050988,
+        "wape": 0.2988805851525494
+      },
+      {
+        "quantity_bin": "3-5",
+        "rows": 25639,
+        "actual_units": 90544.0,
+        "predicted_units": 55397.37537898877,
+        "mae": 1.5210257379479035,
+        "wape": 0.4307030713823809
+      },
+      {
+        "quantity_bin": "6-10",
+        "rows": 3999,
+        "actual_units": 28244.0,
+        "predicted_units": 12565.208136239007,
+        "mae": 3.972918679186546,
+        "wape": 0.5625159962493625
+      },
+      {
+        "quantity_bin": "11+",
+        "rows": 628,
+        "actual_units": 9195.0,
+        "predicted_units": 2739.9499098480046,
+        "mae": 10.279475684507718,
+        "wape": 0.7020675073269
+      }
+    ],
+    "departments_by_wape": [
+      {
+        "department": "GARDEN CENTER",
+        "rows": 22,
+        "actual_units": 37.0,
+        "predicted_units": 29.17516356395495,
+        "mae": 0.8666279094345513,
+        "wape": 0.515292270474598
+      },
+      {
+        "department": "POSTAL CENTER",
+        "rows": 8,
+        "actual_units": 21.0,
+        "predicted_units": 15.07652076933842,
+        "mae": 1.3009918202405304,
+        "wape": 0.49561593152020206
+      },
+      {
+        "department": "MEAT",
+        "rows": 12671,
+        "actual_units": 18569.0,
+        "predicted_units": 19314.6593938893,
+        "mae": 0.5890008978805346,
+        "wape": 0.4019188096851879
+      },
+      {
+        "department": "SALAD BAR",
+        "rows": 1156,
+        "actual_units": 1639.0,
+        "predicted_units": 1654.3730043775502,
+        "mae": 0.5091726490292792,
+        "wape": 0.3591236011457271
+      },
+      {
+        "department": "GROCERY",
+        "rows": 255998,
+        "actual_units": 367801.0,
+        "predicted_units": 370732.6598808664,
+        "mae": 0.48801291476002595,
+        "wape": 0.3396682721165443
+      },
+      {
+        "department": "PRODUCE",
+        "rows": 31607,
+        "actual_units": 48678.0,
+        "predicted_units": 48686.99637020666,
+        "mae": 0.5227529566337241,
+        "wape": 0.3394275175710202
+      },
+      {
+        "department": "MEAT-PCKGD",
+        "rows": 16842,
+        "actual_units": 23336.0,
+        "predicted_units": 23619.54197106541,
+        "mae": 0.46746694710691145,
+        "wape": 0.3373790848120759
+      },
+      {
+        "department": "TOYS",
+        "rows": 1,
+        "actual_units": 1.0,
+        "predicted_units": 1.3325119543178523,
+        "mae": 0.3325119543178523,
+        "wape": 0.3325119543178523
+      },
+      {
+        "department": "RESTAURANT",
+        "rows": 72,
+        "actual_units": 96.0,
+        "predicted_units": 89.0234467411853,
+        "mae": 0.41779988822653963,
+        "wape": 0.3133499161699047
+      },
+      {
+        "department": "NUTRITION",
+        "rows": 5522,
+        "actual_units": 7666.0,
+        "predicted_units": 7301.5883102578855,
+        "mae": 0.4341262666053505,
+        "wape": 0.31271135457797355
+      }
+    ],
+    "categories_by_wape": [
+      {
+        "commodity_desc": "CORN",
+        "rows": 25,
+        "actual_units": 106.0,
+        "predicted_units": 136.194650812607,
+        "mae": 2.941398106978433,
+        "wape": 0.6937259686269889
+      },
+      {
+        "commodity_desc": "OVERNIGHT PHOTOFINISHING",
+        "rows": 24,
+        "actual_units": 52.0,
+        "predicted_units": 37.301151178975964,
+        "mae": 1.162576255534238,
+        "wape": 0.5365736564004175
+      },
+      {
+        "commodity_desc": "INFANT FORMULA",
+        "rows": 395,
+        "actual_units": 959.0,
+        "predicted_units": 739.4997015084236,
+        "mae": 1.2807109569870272,
+        "wape": 0.527508684056179
+      },
+      {
+        "commodity_desc": "GARDEN CENTER",
+        "rows": 22,
+        "actual_units": 37.0,
+        "predicted_units": 29.17516356395495,
+        "mae": 0.8666279094345513,
+        "wape": 0.515292270474598
+      },
+      {
+        "commodity_desc": "RW FRESH PROCESSED MEAT",
+        "rows": 3,
+        "actual_units": 7.0,
+        "predicted_units": 3.455097662976838,
+        "mae": 1.1816341123410539,
+        "wape": 0.5064146195747374
+      },
+      {
+        "commodity_desc": "PWDR/CRYSTL DRNK MX",
+        "rows": 1869,
+        "actual_units": 4286.0,
+        "predicted_units": 4248.548169971837,
+        "mae": 1.1473287914303179,
+        "wape": 0.5003167314939954
+      },
+      {
+        "commodity_desc": "FITNESS&DIET",
+        "rows": 405,
+        "actual_units": 891.0,
+        "predicted_units": 760.8915260059819,
+        "mae": 1.1001167427947873,
+        "wape": 0.5000530649067214
+      },
+      {
+        "commodity_desc": "CANDY - CHECKLANE",
+        "rows": 4522,
+        "actual_units": 8116.0,
+        "predicted_units": 8399.455385110932,
+        "mae": 0.8606038316603428,
+        "wape": 0.4795035148802452
+      },
+      {
+        "commodity_desc": "WATER",
+        "rows": 455,
+        "actual_units": 827.0,
+        "predicted_units": 792.9383908180048,
+        "mae": 0.8698414124880709,
+        "wape": 0.4785705473785638
+      },
+      {
+        "commodity_desc": "SEAFOOD - SHELF STABLE",
+        "rows": 1374,
+        "actual_units": 3621.0,
+        "predicted_units": 3746.748156593793,
+        "mae": 1.2091873132224151,
+        "wape": 0.4588299829791766
+      }
+    ]
+  }
+}

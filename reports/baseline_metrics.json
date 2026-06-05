@@ -1,0 +1,42 @@
+{
+  "train_rows": 1575205,
+  "validation_rows": 374586,
+  "test_rows": 389041,
+  "features": [
+    "avg_unit_price",
+    "median_unit_price",
+    "discount_percentage",
+    "is_display",
+    "is_mailer",
+    "week_no",
+    "lag_quantity_1",
+    "lag_quantity_2",
+    "lag_quantity_4",
+    "rolling_quantity_mean_4",
+    "rolling_quantity_mean_8",
+    "rolling_quantity_std_4",
+    "price_change",
+    "price_lag_1",
+    "total_retail_discount",
+    "total_coupon_discount",
+    "num_baskets",
+    "num_households",
+    "department",
+    "commodity_desc",
+    "brand",
+    "store_id",
+    "product_id"
+  ],
+  "validation": {
+    "mae": 0.20586719805270703,
+    "rmse": 0.5640803352715967,
+    "smape": 0.11848661243738554,
+    "wape": 0.14517836010379145
+  },
+  "test": {
+    "mae": 0.20819974365082206,
+    "rmse": 0.5600692326682903,
+    "smape": 0.12013873454710954,
+    "wape": 0.14657077798144022
+  }
+}
