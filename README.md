@@ -473,7 +473,7 @@ The test suite checks:
 - profit-lift threshold behavior
 - economics metrics such as break-even quantity and risk-adjusted profit
 
-## Why This Project Is Significant
+## Key Features Of The Project
 
 This is more than a dashboard. It includes the main pieces expected in a practical retail pricing analytics system:
 
@@ -534,4 +534,3 @@ git branch -M main
 git remote add origin https://github.com/<your-user>/<your-repo>.git
 git push -u origin main
 ```
-
